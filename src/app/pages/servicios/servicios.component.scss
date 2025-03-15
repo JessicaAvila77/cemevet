@@ -1,0 +1,15 @@
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // centra las tarjetas horizontalmente
+  gap: 20px; // agrega espacio entre tarjetas
+  padding: 10px; // agrega margen interno para evitar que se peguen a los bordes
+}
+
+/* Ajuste en móviles */
+@media (max-width: 768px) {
+  .contenedor-servicios {
+    gap: 25px; // aumenta la separación entre columnas en móvil
+    padding: 15px; // espacio en los bordes para evitar que se vea pegado
+  }
+}

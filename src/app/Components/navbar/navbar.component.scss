@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #227a89 !important; 
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 50px; 
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* buscar efecto  */
+.nav-link:hover {
+  color: #f43b3b !important; 
+}
+
+/* Estilo para el botón de hamburguesa */
+.navbar-toggler {
+  border: none;
+  background: none;
+}
+
+// Hace que el ícono de hamburguesa sea blanco
+.navbar-toggler-icon {
+  filter: invert(1); 
+}
+
+/* Para que los links sean responsivos */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    padding: 10px 0;
+  }
+}

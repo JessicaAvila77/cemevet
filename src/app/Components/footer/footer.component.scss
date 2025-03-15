@@ -1,0 +1,89 @@
+.footer {
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Icono de ubicación */
+.icon-location {
+  color: #f43b3b; 
+  margin-right: 5px;
+}
+
+
+.nombre-clinica {
+  color: #227a89; 
+  font-weight: bold;
+}
+
+/* estilos de los íconos con enlaces */
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Íconos de contacto y siguenos */
+.footer .icon {
+  font-size: 22px;
+  color: #f43b3b;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Espacio entre el primer icono y la palabra */
+.footer .contacto i:first-child,
+.footer .siguenos i:first-child {
+  margin-left: 10px; 
+}
+
+/* Aumentamos la separación entre los íconos */
+.footer .contacto a,
+.footer .siguenos a {
+  margin-right: 15px; 
+}
+
+/* Cambia el color al pasar el mouse */
+.footer .icon:hover {
+  color: #227a89;
+}
+
+/* Rectángulo verde para copyright */
+.footer-bottom {
+  background-color: #227a89;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .info,
+  .footer .contacto,
+  .footer .siguenos {
+    margin-bottom: 10px;
+  }
+
+  /* En móviles, aún más espacio entre íconos */
+  .footer .contacto a,
+  .footer .siguenos a {
+    margin-right: 20px;
+  }
+
+  /* En móviles, más separación del primer icono */
+  .footer .contacto i:first-child,
+  .footer .siguenos i:first-child {
+    margin-left: 15px;
+  }
+}
