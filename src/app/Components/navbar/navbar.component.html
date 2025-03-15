@@ -1,19 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" routerLink="/"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" routerLink="/">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/sobre-nosotros">Sobre Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/productos">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/contacto">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/informacion">Información Relevante</a></li>
-          <li class="nav-item"><a class="nav-link" routerLink="/faq">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">  
+  <div class="container">  
+    <a class="navbar-brand" routerLink="/"></a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">  
+      <span class="navbar-toggler-icon"></span>  
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarNav">  
+      <ul class="navbar-nav ms-auto">  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>  
+        </li>   
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/sobre-nosotros" routerLinkActive="active">Sobre Nosotros</a>  
+        </li>  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/servicios" routerLinkActive="active">Servicios</a>  
+        </li>  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/productos" routerLinkActive="active">Productos</a>  
+        </li>  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>  
+        </li>  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/informacion" routerLinkActive="active">Información Relevante</a>  
+        </li>  
+        <li class="nav-item">  
+          <a class="nav-link" routerLink="/faq" routerLinkActive="active">Preguntas frecuentes</a>  
+        </li>  
+      </ul>  
+    </div>  
+  </div>  
+</nav>  

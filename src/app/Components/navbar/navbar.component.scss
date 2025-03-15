@@ -13,17 +13,30 @@
 .navbar-nav {
   display: flex;
   gap: 20px;
-}
-
-.nav-link {
-  color: white !important;
   font-weight: bold;
 }
 
-/* buscar efecto  */
-.nav-link:hover {
-  color: #f43b3b !important; 
+.nav-link {
+  /* Fondo blanco */
+  color: white; /* Letras negras */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 17px; /* Bordes redondeados */
+  text-decoration: none; /* Quitar subrayado */
+  display: inline-block; /* Para que respete el tamaño del padding */
 }
+
+.nav-link:hover {
+  background-color: white;
+  color: #0e544f !important; /* Cambio de color al pasar el cursor */
+  text-decoration: none; 
+}
+
+/* 🔥 Efecto especial para la página actual */
+.nav-link.active {
+  background-color: white; /* Fondo verde oscuro */
+  color: #0e544f !important; /* Texto en blanco */
+}
+
 
 /* Estilo para el botón de hamburguesa */
 .navbar-toggler {

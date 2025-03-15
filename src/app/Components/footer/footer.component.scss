@@ -87,3 +87,13 @@
     margin-left: 15px;
   }
 }
+
+a {
+  color: white; /* Cambia el color del enlace a blanco */
+  text-decoration: none; /* Opcional: quita el subrayado */
+}
+
+a:hover {
+  color: #f4f4f4; /* Cambia el color al pasar el cursor */
+  text-decoration: underline; /* Agrega subrayado al hacer hover */
+}
