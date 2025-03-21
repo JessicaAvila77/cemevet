@@ -1,0 +1,38 @@
+
+.banner {
+  background-image: url('/descarga.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo */
+  background-position: center;
+  height: 550px; /* Altura más flexible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Asegurar que el texto se mantenga en el centro en móviles */
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.3); /* Oscurece un poco la imagen */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* 🔹 Ajustar el banner en móviles */
+@media (max-width: 768px) {
+  .banner {
+    height: 250px; /* Reduce la altura en móviles */
+    background-size: contain; /* Ajusta la imagen */
+  }
+
+  .banner-overlay h1 {
+    font-size: 20px; /* Reduce el tamaño del título */
+  }
+
+  .banner-overlay p {
+    font-size: 16px;
+  }
+}
