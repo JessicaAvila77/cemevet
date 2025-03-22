@@ -1,7 +1,38 @@
 
+
+$verde-oscuro: #227a89;
+$verde-claro: #a2d5c6;
+$celeste: #c2e9f0;
+$gris-claro: #f4f4f4;
+
 main {
   min-height: calc(100vh - 140px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.tarjeta {
+  background-color: $celeste;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  min-height: 180px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: $verde-oscuro;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #333;
+  }
 }

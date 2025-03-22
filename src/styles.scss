@@ -2,3 +2,23 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+  }
+
+  .titulo-pagina {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    color: #f43b3b; 
+  }
+  
+  .subtitulo-pagina {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3c6e6e; // un celeste/verde más suave
+    margin-bottom: 20px;
+  }

@@ -6,3 +6,5 @@ export interface ITarjetaServicios{
   
 
 }
+
+//debo incorporar un ngIf para saber si trae un enlace.

@@ -1,0 +1,33 @@
+
+.titulo-seccion {
+    font-size: 28px;
+    font-weight: bold;
+    color: #227a89;
+    margin-bottom: 15px;
+  }
+  
+  .descripcion-seccion {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  .tarjeta-info {
+    background-color: #e0f7f7; // celeste claro
+    border-left: 6px solid #3d8f91; // verde fuerte de la paleta
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .titulo-tarjeta {
+      font-weight: 600;
+      color: #0e544f;
+    }
+  
+    .texto-tarjeta {
+      font-size: 15px;
+      color: #333;
+    }
+  }
