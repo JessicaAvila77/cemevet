@@ -1,0 +1,14 @@
+
+.row {
+    justify-content: center;
+    gap: 15px; // Espaciado entre tarjetas
+    margin-bottom: 30px;
+  }
+  
+  /* Ajustes en móviles */
+  @media (max-width: 768px) {
+    .row {
+      gap: 10px; // Más espacio en móviles
+      margin-bottom: 40px;
+    }
+  }
