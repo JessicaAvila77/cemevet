@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center; // centra las tarjetas horizontalmente
-  gap: 20px; // agrega espacio entre tarjetas
+  gap: 15px; // agrega espacio entre tarjetas
   padding: 10px; // agrega margen interno para evitar que se peguen a los bordes
 }
 
@@ -11,5 +11,31 @@
   .contenedor-servicios {
     gap: 25px; // aumenta la separación entre columnas en móvil
     padding: 15px; // espacio en los bordes para evitar que se vea pegado
+    margin-top: -30px; 
   }
+}
+
+h4 {
+  margin-top: 0px; /*  Asegura que no esté pegado al navbar */
+  margin-bottom: 20px; /*  Reduce el espacio para que no se "pierda" */
+  display: block !important;
+  text-align: center;
+  font-size: 24px;
+  color: #f43b3b; /*  Color rojo asegurado */
+  position: relative; /*  Asegura que se posicione bien */
+  z-index: 10; /*  Asegura que no quede detrás de otros elementos */
+}
+
+
+.servicios-container {
+ 
+  margin-top: 0px; 
+}
+
+.titulo-servicios {
+  margin-top: 25px;  /* Reduce el espacio arriba */
+  margin-bottom: 20px; /* Espacio con las tarjetas */
+  font-size: 24px;
+  text-align: center;
+  color: #f43b3b; /* Rojo de la paleta */
 }
