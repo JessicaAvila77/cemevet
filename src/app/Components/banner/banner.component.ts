@@ -8,8 +8,6 @@ import { Component, Input } from '@angular/core';
 })
 export class BannerComponent {
 
-  @Input() titulo: string = '';
-  @Input() subtitulo: string = '';
 
 
 }

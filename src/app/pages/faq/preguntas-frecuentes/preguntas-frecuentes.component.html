@@ -1,1 +1,18 @@
-<p>preguntas-frecuentes works!</p>
+<div class="container">
+  <h4 class="text-center text-danger titulo-servicios">Preguntas Frecuentes</h4>
+
+  <div *ngFor="let categoria of preguntasCategorias">
+    <h5>{{ categoria.categoria }}</h5>
+
+    <div *ngFor="let pregunta of categoria.preguntas">
+      <button class="btn btn-pregunta"
+              (click)="togglePregunta(pregunta.titulo)">
+        {{ pregunta.titulo }}
+      </button>
+
+      <div class="respuesta" *ngIf="openPreguntaId === pregunta.titulo">
+        {{ pregunta.respuesta }}
+      </div>
+    </div>
+  </div>
+</div>
