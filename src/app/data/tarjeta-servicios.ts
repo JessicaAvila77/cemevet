@@ -16,7 +16,8 @@ export const datos: ITarjetaServicios[] = [
     },
     {
         icono: "shop",
-        texto: "Pet Shop"
+        texto: "Pet Shop",
+        ruta: '/productos' 
     },
     {
         icono: "dog",

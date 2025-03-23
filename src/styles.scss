@@ -22,3 +22,14 @@ body {
     color: #3c6e6e; // un celeste/verde más suave
     margin-bottom: 20px;
   }
+
+  /* Estilo general para párrafos en tarjetas u otras secciones */
+.parrafo-estandar {
+  font-size: 1rem;       // 16px (ajustable)
+  color: #333;           // gris oscuro legible
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+

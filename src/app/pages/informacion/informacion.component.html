@@ -1,14 +1,13 @@
-<div class="container">
-  <h4 class="titulo-pagina">Información relevante</h4>
+<div class="container mt-4">
+  <h2 class="titulo-pagina">Información Relevante</h2>
   <p class="subtitulo-pagina">
-    En esta sección encontrarás recursos valiosos sobre cómo mejorar la dieta y salud física de tu perro
+    En esta sección encontrarás recursos valiosos sobre cómo mejorar la dieta y salud física de tu perro.
   </p>
 
-  <div class="row gy-4">
-    <div class="col-md-6" *ngFor="let item of informacion">
-      <div class="tarjeta-info p-4 rounded shadow-sm">
-        <h5 class="titulo-tarjeta mb-2">{{ item.titulo }}</h5>
-        <p class="texto-tarjeta">{{ item.descripcion }}</p>
+  <div class="row">
+    <div class="col-md-6 mb-4 d-flex" *ngFor="let tarjeta of tarjetas">
+      <div class="w-100 h-100">
+        <app-info-tarjeta [tarjeta]="tarjeta"></app-info-tarjeta>
       </div>
     </div>
   </div>

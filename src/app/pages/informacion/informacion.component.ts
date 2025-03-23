@@ -1,21 +1,25 @@
 import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IInfoTarjeta } from '../../types/IInfoTarjeta';
+import { InfoService } from '../../services/info.service';
+import { InfoTarjetaComponent } from "../../Components/info-tarjeta/info-tarjeta.component";
 
 @Component({
   selector: 'app-informacion',
-  imports: [NgFor],
+  imports: [NgFor, InfoTarjetaComponent],
   templateUrl: './informacion.component.html',
   styleUrl: './informacion.component.scss'
 })
-export class InformacionComponent {
+export class InformacionComponent implements OnInit{
 
-  informacion = [
-    { titulo: 'Entender las dietas de alto rendimiento', descripcion: 'Lorem ipsum dolor sit amet...' },
-    { titulo: 'Los beneficios de la comida húmeda', descripcion: 'Lorem ipsum dolor sit amet...' },
-    { titulo: 'Detrás de los olores de los perros', descripcion: 'Lorem ipsum dolor sit amet...' },
-    { titulo: 'Alimentación de perros con sobrepeso', descripcion: 'Lorem ipsum dolor sit amet...' },
-    { titulo: 'Cómo mantener fresco a tu perro', descripcion: 'Lorem ipsum dolor sit amet...' },
-    { titulo: 'Crear hábitos alimenticios saludables', descripcion: 'Lorem ipsum dolor sit amet...' },
-  ];
+  tarjetas: IInfoTarjeta[] = [];
+
+  constructor(private infoService: InfoService) {}
+
+  ngOnInit(): void {
+    this.tarjetas = this.infoService.getTarjeta();
+  }
+
+  
 
 }

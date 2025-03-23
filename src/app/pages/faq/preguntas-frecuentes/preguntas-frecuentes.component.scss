@@ -1,74 +1,6 @@
 
-.titulo-faq {
-    font-size: 28px;
-    font-weight: bold;
-    color: #227a89; /* Color de la paleta */
-    margin-bottom: 20px;
-  }
-  
-  .accordion-item {
-    border: 1px solid #227a89; /* Borde con color de la paleta */
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .accordion-button {
-    background-color: #227a89; /* Fondo de los botones */
-    color: white;
-    font-weight: bold;
-  }
-  
-  .accordion-button:not(.collapsed) {
-    background-color: #175e66; /* Color más oscuro cuando está abierto */
-  }
-  
-  .accordion-button:hover {
-    background-color: #1c6d75;
-  }
-  
-  .accordion-body {
-    background-color: #f8f9fa;
-    color: #333;
-    padding: 15px;
-  }
-
-
-  h4 {
-    font-weight: bold;
-    color: #227a89;
-  }
-  
-  .accordion-button {
-    background-color: #227a89;
-    color: white;
-  }
-  
-  .accordion-button:not(.collapsed) {
-    background-color: #1a5e6a;
-    color: white;
-  }
-
-  h4 {
-    margin-top: 0px; /*  Asegura que no esté pegado al navbar */
-    margin-bottom: 20px; /*  Reduce el espacio para que no se "pierda" */
-    display: block !important;
-    text-align: center;
-    font-size: 24px;
-    color: #f43b3b; /*  Color rojo asegurado */
-    position: relative; /*  Asegura que se posicione bien */
-    z-index: 10; /*  Asegura que no quede detrás de otros elementos */
-  }
-
-  .titulo-servicios {
-    margin-top: 25px;  /* Reduce el espacio arriba */
-    margin-bottom: 20px; /* Espacio con las tarjetas */
-    font-size: 24px;
-    text-align: center;
-    color: #f43b3b; /* Rojo de la paleta */
-  }
-
   .container {
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
   }
   
@@ -108,39 +40,18 @@
     }
   }
   
-  // Contenedor de respuesta
-  .respuesta {
-    background-color: #e6f2f2;
-    color: #0e544f;
-    border: 1px solid #c2e3e3;
-    border-radius: 6px;
-    padding: 15px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-  }
-
-  h4 {
-    margin-top: 0px; /*  Asegura que no esté pegado al navbar */
-    margin-bottom: 20px; /*  Reduce el espacio para que no se "pierda" */
-    display: block !important;
+  .numero {
+    background-color: #1ea6bb; // celeste de tu paleta
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
-    font-size: 24px;
-    color: #f43b3b; /*  Color rojo asegurado */
-    position: relative; /*  Asegura que se posicione bien */
-    z-index: 10; /*  Asegura que no quede detrás de otros elementos */
+    margin-right: 10px;
   }
+    
   
-  
-  .servicios-container {
-   
-    margin-top: 0px; 
-  }
-  
-  .titulo-servicios {
-    margin-top: 25px;  /* Reduce el espacio arriba */
-    margin-bottom: 20px; /* Espacio con las tarjetas */
-    font-size: 24px;
-    text-align: center;
-    color: #f43b3b; /* Rojo de la paleta */
-  }
   

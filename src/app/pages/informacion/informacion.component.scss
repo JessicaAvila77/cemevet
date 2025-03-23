@@ -1,33 +1,31 @@
 
-.titulo-seccion {
-    font-size: 28px;
-    font-weight: bold;
-    color: #227a89;
-    margin-bottom: 15px;
+.tarjeta-info {
+  background-color: #e0f7f9; // celeste claro
+  border-left: 6px solid #227a89; // borde verde
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    transform: translateY(-3px);
   }
-  
-  .descripcion-seccion {
-    font-size: 16px;
-    color: #444;
+
+  h5 {
+    font-size: 1.1rem;
+    color: #0e544f;
+    margin-bottom: 10px;
+    font-weight: 600;
   }
-  
-  .tarjeta-info {
-    background-color: #e0f7f7; // celeste claro
-    border-left: 6px solid #3d8f91; // verde fuerte de la paleta
-    transition: transform 0.3s ease;
-    
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-  
-    .titulo-tarjeta {
-      font-weight: 600;
-      color: #0e544f;
-    }
-  
-    .texto-tarjeta {
-      font-size: 15px;
-      color: #333;
-    }
+
+  p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+    flex-grow: 1;
   }
+}
