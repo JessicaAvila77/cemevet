@@ -1,16 +1,20 @@
-<div class="container">
-  <h4 class="text-center text-danger titulo-servicios">Preguntas Frecuentes</h4>
+<div class="container mb-4">
+  <h1 class="titulo-pagina">Preguntas frecuentes</h1>
+  <p class="subtitulo-pagina">
+    Encuentra respuestas a las preguntas más comunes sobre el cuidado de tu mascota
+  </p>
 
   <div *ngFor="let categoria of preguntasCategorias">
     <h5>{{ categoria.categoria }}</h5>
 
-    <div *ngFor="let pregunta of categoria.preguntas">
+    <div *ngFor="let pregunta of categoria.preguntas; let i = index">
       <button class="btn btn-pregunta"
               (click)="togglePregunta(pregunta.titulo)">
+              <span class="numero">{{ i + 1 }}</span> <!-- Número automático -->
         {{ pregunta.titulo }}
       </button>
 
-      <div class="respuesta" *ngIf="openPreguntaId === pregunta.titulo">
+      <div class="parrafo-estandar" *ngIf="openPreguntaId === pregunta.titulo">
         {{ pregunta.respuesta }}
       </div>
     </div>

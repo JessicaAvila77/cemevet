@@ -1,1 +1,14 @@
-<p>informacion works!</p>
+<div class="container mt-4">
+  <h2 class="titulo-pagina">Información Relevante</h2>
+  <p class="subtitulo-pagina">
+    En esta sección encontrarás recursos valiosos sobre cómo mejorar la dieta y salud física de tu perro.
+  </p>
+
+  <div class="row">
+    <div class="col-md-6 mb-4 d-flex" *ngFor="let tarjeta of tarjetas">
+      <div class="w-100 h-100">
+        <app-info-tarjeta [tarjeta]="tarjeta"></app-info-tarjeta>
+      </div>
+    </div>
+  </div>
+</div>

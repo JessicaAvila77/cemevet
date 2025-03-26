@@ -1,0 +1,45 @@
+.tarjeta-info {
+  position: relative; /* 🔹 Necesario para posicionar el ícono */
+  background-color: #e0f7f9; /* celeste claro */
+  border-left: 6px solid #227a89; /* borde lateral verde */
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  h5 {
+    font-size: 1.2rem;
+    color: #0e544f; /* verde oscuro de la paleta */
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+
+}
+
+.icono-mascota {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  color: #0f5456;
+}
+
+.contenido-tarjeta {
+  padding-top: 30px; // Esto evita que el ícono tape el texto
+}

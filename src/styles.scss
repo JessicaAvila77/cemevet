@@ -2,3 +2,34 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1f1f1f;
+  }
+
+  .titulo-pagina {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    color: #f43b3b; 
+  }
+  
+  .subtitulo-pagina {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #3c6e6e; // un celeste/verde más suave
+    margin-bottom: 20px;
+  }
+
+  /* Estilo general para párrafos en tarjetas u otras secciones */
+.parrafo-estandar {
+  font-size: 1rem;       // 16px (ajustable)
+  color: #333;           // gris oscuro legible
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+

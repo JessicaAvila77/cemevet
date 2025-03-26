@@ -20,7 +20,7 @@ export class PreguntasFrecuentesComponent implements OnInit {
   //inyecta el servicio en el componente, solo se usa internamente (private)
   constructor(private preguntasService : PreguntasService) {}
 
-  //llama al servicio para obtener las preguntas y las guarda en preguntasCategorias
+  //llama al servicio para obtener las preguntas y las guarda en preguntas
   ngOnInit(): void {
     this.preguntasCategorias = this.preguntasService.getPreguntas();
   }

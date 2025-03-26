@@ -1,8 +1,17 @@
 
-    <div class="card text-center tarjeta">
-        <div class="card-body">
-          <i [class]="'fa-solid fa-' + icono"></i>          
-          <p class="texto">{{ texto }}</p> 
-        </div>
-      </div>
+<a *ngIf="ruta" [routerLink]="ruta" class="card text-center tarjeta enlace-tarjeta">
+  <div class="card-body">
+    <i [class]="'fa-solid fa-' + icono"></i>
+    <p class="parrafo-estandar">{{ texto }}</p>
+  </div>
+</a>
+
+<!-- Si no hay ruta, es solo una tarjeta normal -->
+<div *ngIf="!ruta" class="card text-center tarjeta">
+  <div class="card-body">
+    <i [class]="'fa-solid fa-' + icono"></i>
+    <p class="parrafo-estandar">{{ texto }}</p>
+  </div>
+</div>
+   
     
