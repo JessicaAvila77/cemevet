@@ -1,1 +1,16 @@
-<p>productos works!</p>
+<div class="productos-container">
+  <h2 class="titulo">Nuestros Productos</h2>
+  <div class="franja-celeste">
+    Explora nuestro repertorio que incluye desde accesorios hasta alimentos premium.
+  </div>
+
+  <div class="categorias-grid">
+    <div *ngFor="let categoria of categorias" class="categoria">
+      <i [class]="categoria.icono" class="categoria-icon"></i>
+      <h3>{{ categoria.nombre }}</h3>
+      <a [href]="whatsappLink(categoria.nombre)" target="_blank" class="btn-whatsapp">
+        Consultar
+      </a>
+    </div>
+  </div>
+</div>
