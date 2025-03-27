@@ -1,167 +1,130 @@
 h4 {
-    margin-top: 0px; /*  Asegura que no esté pegado al navbar */
-    margin-bottom: 20px; /*  Reduce el espacio para que no se "pierda" */
-    display: block !important;
-    text-align: center;
-    font-size: 24px;
-    color: #f43b3b; /*  Color rojo asegurado */
-    position: relative; /*  Asegura que se posicione bien */
-    z-index: 10; /*  Asegura que no quede detrás de otros elementos */
-  }
+  margin-top: 0px; /*  Asegura que no esté pegado al navbar */
+  margin-bottom: 20px; /*  Reduce el espacio para que no se "pierda" */
+  display: block !important;
+  text-align: center;
+  font-size: 24px;
+  color: #f43b3b; /*  Color rojo asegurado */
+  position: relative; /*  Asegura que se posicione bien */
+  z-index: 10; /*  Asegura que no quede detrás de otros elementos */
+  font-weight: bold;
+}
 
-  .titulo-servicios {
-    margin-top: 25px;  /* Reduce el espacio arriba */
-    margin-bottom: 20px; /* Espacio con las tarjetas */
-    font-size: 24px;
-    text-align: center;
-    color: #f43b3b; /* Rojo de la paleta */
-  }
+.titulo-servicios {
+  margin-top: 25px;  /* Reduce el espacio arriba */
+  margin-bottom: 20px; /* Espacio con las tarjetas */
+  font-size: 24px;
+  text-align: center;
+  color: #f43b3b; /* Rojo de la paleta */
+}
 
-  .sobre-nosotros_36-31 {
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    background: #ffffff;
-    width: 1440px;
-    height: 1950px;
-  }
-  .rectangle-73_195-69509 {
-    top: 609px;
-    left: 0px;
-    position: absolute;
-    display: flex;
-    display: flex;
-  }
-   
-  .text-misi-n {
-    top: 628px;
-    left: 73px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 36px;
-    font-family: DM Sans;
-    letter-spacing: 0%;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: left;
-    text-wrap: nowrap;
-    width: 108px;
-    height: 47px;
-  }
-  
-  .text-visi-n {
-    top: 628px;
-    left: 785px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 36px;
-    font-family: DM Sans;
-    letter-spacing: 0%;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: left;
-    width: 112px;
-    height: 35px;
-  }
-  
-  .text-ofrecer-permanente {
-    top: 682px;
-    left: 73px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 20px;
-    font-family: DM Sans;
-    letter-spacing: 0%;
-    text-decoration: none;
-    font-weight: 400;
-    text-align: left;
-    width: 566px;
-    height: 283px;
-  }
-  
-  .text-ser-un-centro-m-dico-veterinario {
-  top: 682px;
-    left: 785px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 20px;
-    font-family: DM Sans;
-    letter-spacing: 0%;
-    text-decoration: none;
-    font-weight: 400;
-    text-align: left;
-    width: 585px;
-    height: 283px;
-  }
-  
-  .group-1940_188-52 {
-    top: 1027px;
-    left: 29px;
-    position: absolute;
-    display: flex;
-    box-sizing: border-box;
-  }
-  .rectangle-67_118-62 {
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    display: flex;
-    display: flex;
-  }
-  
-  .text-en-nuestro-equipo-veterinario {
-    top: 124px;
-    left: 41px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 20px;
-    letter-spacing: 0%;
-    text-decoration: none;
-    text-align: left;
-    text-wrap: wrap;
-    width: 551px;
-    height: 408px;
-  }
-  
-  .vet-doing-routine-examination_311-790 {
-    top: 70px;
-    left: 649px;
-    position: absolute;
-    display: flex;
-    display: flex;
-  }
-  
-  .text-nuestro-equipo-veterinario_118-61 {
-    top: 48px;
-    left: 41px;
-    position: absolute;
-    display: flex;
-    color: #000000;
-    font-size: 36px;
-    font-family: Inter;
-    letter-spacing: 0%;
-    text-decoration: none;
-    font-weight: 700;
-    text-align: left;
-    text-wrap: nowrap;
-    width: 475px;
-    height: 44px;
-  }
-  
-  .group-1940_188-52 {
-    position: relative;
-    box-sizing: border-box;
-  }
-  .rectangle-67_118-62 {
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    display: flex;
-    display: flex;
-  }
-  
+.servicios-container {
+  padding: 20px;
+  margin-top: 0px; 
+}
+
+/* Hace que el rectángulo abarque todo el ancho pero con altura dinámica */
+.rectangle {
+  background-color: #CCE7F0; /* Color de fondo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0; /* Espaciado arriba y abajo */
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+
+}
+
+
+/* Contenedor de texto alineado en dos columnas */
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px; /* Espacio entre columnas */
+  width: 80%;
+  max-width: 1200px; /* Máximo ancho del contenido */
+  color: #000;
+  font-family: 'DM Sans', sans-serif;
+  text-align: center;
+}
+
+/* Cada columna ocupa la mitad del espacio disponible */
+.column {
+  width: 45%;
+}
+
+/* Estilos de los títulos */
+.text-mision, .text-vision {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Párrafos con alineación justificada */
+.text-descripcion {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+//Rectángulo de nuestro equipo
+/* Contenedor principal ocupa todo el ancho */
+.section-2_252-684 {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #d9d9d9;
+  width: 100%;
+  justify-content: center;
+  margin-top: 150px;
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+
+
+/* Contenedor interno con dos columnas */
+.text-container-equipo {
+  display: flex;
+  max-width: 1200px; /* Ajusta el ancho máximo */
+  width: 90%;
+}
+
+/* Columnas */
+.column {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Texto alineado */
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-nuestro-equipo {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-equipo {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Imagen alineada */
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
