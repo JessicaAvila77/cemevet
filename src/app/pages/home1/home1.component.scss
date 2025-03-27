@@ -11,17 +11,29 @@
   // CENTRO MÉDICO
   // -----------------------------
   .intro-section {
+    width: 100%;
+    max-width: 1200px;
+    background: #e3f6f5;
     background-image: url('/huellas.jpeg');
-    background-size: cover;
     background-repeat: repeat;
-    background-color: #e7f7f8;
+    background-size: 580px; // ← cambia aquí
     border-radius: 25px;
-    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    padding: 50px;
+    gap: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      z-index: 1;
+    }
   }
   
   .intro-content {
