@@ -1,0 +1,245 @@
+
+.home-container {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  // -----------------------------
+  // CENTRO MÉDICO
+  // -----------------------------
+  .intro-section {
+    background-image: url('/huellas.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #e7f7f8;
+    border-radius: 25px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .intro-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo-container {
+    flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+  
+    .logo-circulo {
+      width: 220px;
+      height: auto;
+    }
+  }
+  
+  // -----------------------------
+  // FILOSOFÍA
+  // -----------------------------
+  .filosofia-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto 20px auto;
+    background-color: #e3f6f5;
+    border-radius: 25px;
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+      margin: 30px auto 40px auto;
+    }
+  }
+  
+  .filosofia-imagen {
+    flex: 0 0 300px;
+  
+    img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+  
+  .filosofia-texto {
+    flex: 1;
+    text-align: justify;
+    z-index: 2;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .filosofia-section::before {
+    content: "";
+    background: url('/huellita.svg') no-repeat center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.05;
+    left: 20px;
+    bottom: 20px;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .titulo-filosofia {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0e544f;
+    margin-bottom: 20px;
+  }
+  
+  .parrafo-filosofia {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+  }
+  
+  .titulo-home {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0e544f;
+  }
+  
+  .subtitulo-home {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0e544f;
+    margin-bottom: 10px;
+  }
+  
+  .parrafo-home {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  // -----------------------------
+  // Responsivo
+  // -----------------------------
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .filosofia-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .filosofia-img img {
+      width: 90%;
+    }
+  
+    .filosofia-texto {
+      padding: 0 10px;
+    }
+  }
+  .home-container {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  // SECCIÓN INTRO
+  .intro-section {
+    width: 100%;
+    max-width: 1200px;
+    background: #e3f6f5;
+    background-image: url('/huellas.jpeg');
+    background-repeat: repeat;
+    background-size: 100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+  
+    // Superposición de color semitransparente para suavizar las huellas
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      z-index: 1;
+    }
+  }
+  
+  .intro-content,
+  .logo-container {
+    z-index: 2; // para estar por encima del overlay
+  }
+  
+  .intro-content {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .logo-container {
+    flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo-circulo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #0e544f;
+  }
+  
+  // TEXTOS
+  .titulo-home {
+    font-size: 2.8rem;
+    color: #0e544f;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .parrafo-home {
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  // RESPONSIVE
+  @media (max-width: 768px) {
+    .intro-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
+  
+    .logo-container {
+      margin-top: 20px;
+    }
+  }

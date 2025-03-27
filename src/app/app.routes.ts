@@ -6,10 +6,11 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InformacionComponent } from './pages/informacion/informacion.component';
 import { PreguntasFrecuentesComponent } from './pages/faq/preguntas-frecuentes/preguntas-frecuentes.component';
+import { Home1Component } from './pages/home1/home1.component';
 
 export const routes: Routes = [
 
-  { path: '', component: HomeComponent }, 
+  { path: '', component: Home1Component }, 
   { path: 'sobre-nosotros', component: SobreNosotrosComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'productos', component: ProductosComponent },
