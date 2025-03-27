@@ -1,0 +1,124 @@
+.productos-container {
+  text-align: center;
+  padding: 20px;
+}
+
+// Estilo principal de la cuadrícula
+.categorias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+// Tarjetas individuales
+.categoria {
+  width: 100%;
+  max-width: 260px;
+  min-height: 240px;
+  background: #cfe9e8; /* Celeste claro */
+  color: #0e544f;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+}
+
+// Ícono dentro de la tarjeta
+.categoria-icon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+// Botón de consulta (WhatsApp)
+.btn-whatsapp {
+  background-color: #0e544f;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  width: 90%;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #093d3a;
+    text-decoration: none;
+  }
+}
+
+/* ✅ Ajustes para móviles */
+@media (max-width: 576px) {
+  .categorias-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .categoria {
+    width: 90%;
+  }
+}
+.subtitulo-beneficios {
+  font-size: 1.3rem;
+  color: #0e544f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.beneficios-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.beneficio {
+  background-color: #e0f7f9;
+  border-left: 5px solid #0e544f;
+  padding: 15px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0e544f;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .beneficios-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficio {
+    width: 90%;
+  }
+}

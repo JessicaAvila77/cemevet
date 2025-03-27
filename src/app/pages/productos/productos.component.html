@@ -1,1 +1,32 @@
-<p>productos works!</p>
+<div class="container mb-4">
+  <h2 class="titulo-pagina">Nuestros Productos</h2>
+  <div class="subtitulo-pagina">
+    Explora nuestro repertorio que incluye desde accesorios hasta alimentos premium.
+  </div>
+
+  <div class="categorias-grid">
+    <div *ngFor="let categoria of categorias" class="categoria">
+      <i [class]="categoria.icono" class="categoria-icon"></i>
+      <h3>{{ categoria.nombre }}</h3>
+      <a [href]="whatsappLink(categoria.nombre)" target="_blank" class="btn-whatsapp">
+        Consultar
+      </a>
+    </div>
+  </div>
+</div>
+
+<h4 class="subtitulo-pagina mt-5">¿Por qué elegir nuestros productos?</h4>
+<div class="beneficios-grid  mb-4">
+  <div class="beneficio">
+    <i class="fa-solid fa-heart"></i>
+    <p>Productos seleccionados con amor y cuidado para tu mascota.</p>
+  </div>
+  <div class="beneficio">
+    <i class="fa-solid fa-truck-fast"></i>
+    <p>Disponibilidad para entregas rápidas en la ciudad.</p>
+  </div>
+  <div class="beneficio">
+    <i class="fa-solid fa-leaf"></i>
+    <p>Opciones naturales y saludables disponibles.</p>
+  </div>
+</div>
